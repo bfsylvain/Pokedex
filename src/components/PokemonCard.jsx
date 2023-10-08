@@ -1,4 +1,4 @@
-const pokemonList = [
+const PokemonList = [
     {
         name: "bulbasaur",
         imgSrc:
@@ -11,8 +11,8 @@ const pokemonList = [
 
 function PokemonCard() {
 
-    const pokemon = pokemonList[0]
-    const isImage = (pokemon) => {
+    const Pokemon = PokemonList[0]
+    const IsImage = (pokemon) => {
     return pokemon.imgSrc 
     ? <img src={pokemon.imgSrc} alt={pokemon.name}/> 
     : <p>"???"</p>
@@ -20,8 +20,8 @@ function PokemonCard() {
 
     return (
         <figure>
-            {isImage(pokemon)}
-            <figcaption>{pokemon.name}</figcaption>
+            {IsImage(Pokemon)}
+            <figcaption>{Pokemon.name}</figcaption>
         </figure>
     );
 }

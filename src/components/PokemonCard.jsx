@@ -19,7 +19,7 @@ function PokemonCard() {
     }
 
     return (
-        <figure className="card">
+        <figure>
             {isImage(pokemon)}
             <figcaption>{pokemon.name}</figcaption>
         </figure>

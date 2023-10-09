@@ -1,5 +1,6 @@
 import PokemonCard from './components/PokemonCard'
 import './App.css'
+import { useState } from 'react';
 
 const PokemonList = [
   {
@@ -11,7 +12,13 @@ const PokemonList = [
     name: "mew",
   },
 ];
+
+
 function App() {
+
+  const[pokemonIndex, setPokemonIndex] = useState(PokemonList[0])
+console.log(useState)
+//Stopped here
 
   return (
     <div>

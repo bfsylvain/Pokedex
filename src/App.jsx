@@ -44,11 +44,9 @@ function App() {
 
   return (
     <div>
-      <NavBar setPokemonIndex={[pokemonIndex, setPokemonIndex]}/>
+      <NavBar NextPokemon={NextPokemon} PreviousPokemon={PreviousPokemon} pokemonIndex={pokemonIndex} pokemonList={pokemonList}/>
       {/* work in progress */}
       <PokemonCard pokemon={pokemonList[pokemonIndex]} />
-      {pokemonIndex > 0 && <button onClick={PreviousPokemon}>Précédent</button>}
-      {pokemonIndex < pokemonList.length - 1 && <button onClick={NextPokemon}>Suivant</button>}
     </div>
   );
 }

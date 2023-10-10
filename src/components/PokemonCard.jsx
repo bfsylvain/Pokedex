@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 
 
 function PokemonCard({pokemon}) {
-    console.log({pokemon})
 
     const IsImage = (element) => {
     return element.imgSrc 

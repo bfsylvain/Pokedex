@@ -9,6 +9,7 @@ function NavBar({
         <nav>
             {pokemonList.map(pokemon => 
                 <button key={pokemon.name}>{pokemon.name}</button>
+                //onclik to do
             )}
         </nav>
     )

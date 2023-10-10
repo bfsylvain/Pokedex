@@ -1,15 +1,12 @@
 
 function NavBar({
-    NextPokemon,
-    PreviousPokemon, 
-    pokemonIndex, 
+    handleClick,
     pokemonList}) {
 
     return(
         <nav>
-            {pokemonList.map(pokemon => 
-                <button key={pokemon.name}>{pokemon.name}</button>
-                //onclik to do
+            {pokemonList.map((pokemon, index) => 
+                <button key={pokemon.name} onClick={() => handleClick(index)}>{pokemon.name}</button>
             )}
         </nav>
     )

@@ -44,8 +44,7 @@ function App() {
 
   return (
     <div>
-      <NavBar NextPokemon={NextPokemon} PreviousPokemon={PreviousPokemon} pokemonIndex={pokemonIndex} pokemonList={pokemonList}/>
-      {/* work in progress */}
+      <NavBar pokemonList={pokemonList}/>
       <PokemonCard pokemon={pokemonList[pokemonIndex]} />
     </div>
   );

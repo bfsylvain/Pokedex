@@ -7,8 +7,9 @@ function NavBar({
 
     return(
         <nav>
-            {pokemonIndex > 0 && <button onClick={PreviousPokemon}>Précédent</button>}
-            {pokemonIndex < pokemonList.length - 1 && <button onClick={NextPokemon}>Suivant</button>}
+            {pokemonList.map(pokemon => 
+                <button key={pokemon.name}>{pokemon.name}</button>
+            )}
         </nav>
     )
 }

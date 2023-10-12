@@ -1,7 +1,14 @@
 
 function NavBar({
-    handleClick,
-    pokemonList}) {
+    pokemonList,
+    setPokemonIndex
+}) {
+
+const handleClick = (index) => {
+setPokemonIndex(index)
+index === 3 && alert("pika pikachu !!!")
+}
+
 
     return(
         <nav>

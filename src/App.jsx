@@ -37,15 +37,12 @@ function App() {
   )
   const[pokemonIndex, setPokemonIndex] = useState(0)
 
-  // const handleClick = (index) => {
-  //   setPokemonIndex(index)
-  //   index === 3 && alert("pika pikachu !!!")
-  // }
+
 
   return (
 
     <div>
-      <NavBar pokemonList={pokemonList} setPokemonIndex={setPokemonIndex}/*handleClick={handleClick}*//>
+      <NavBar pokemonList={pokemonList} setPokemonIndex={setPokemonIndex}/>
       <PokemonCard pokemon={pokemonList[pokemonIndex]} />
     </div>
   );
